@@ -5121,19 +5121,14 @@
       <div id="google_translate_element"></div>
     </footer>
           
-    <script type="text/javascript">
+    <script>
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false},'google_translate_element');
+      new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi', autoDisplay: false, multilanguagePage: true}, 'google_translate_element');
       }
-
-      (function() {
-        var googleTranslateScript = document.createElement('script');
-        googleTranslateScript.type = 'text/javascript';
-        googleTranslateScript.async = true;
-        googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( googleTranslateScript );
-      })();
-      </script>   
+      var a = document.querySelector("#google_translate_element");
+      a.selectedIndex=1;
+      a.dispatchEvent(new Event('change'));
+      </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script>
   CC.data = CC.data || {};
