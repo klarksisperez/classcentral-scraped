@@ -5118,10 +5118,24 @@
                       </ul>
         </div>
       </div>
+      <style>#google_translate_element,.skiptranslate{display:none;}body{top:0!important;}</style>
+      <div id="google_translate_element"></div>
     </footer>
           
-  
-  
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false},'google_translate_element');
+      }
+
+      (function() {
+        var googleTranslateScript = document.createElement('script');
+        googleTranslateScript.type = 'text/javascript';
+        googleTranslateScript.async = true;
+        googleTranslateScript.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( googleTranslateScript );
+      })();
+      </script>   
+
 <script>
   CC.data = CC.data || {};
   CC.data.googleAuthClientId = "800843789351-uaenl03be56t7l8l8be0ms54n7kc0al4.apps.googleusercontent.com";
